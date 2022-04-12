@@ -1,12 +1,12 @@
 {
-    "name": "zaloplatform/zalo-php-sdk",
+    "name": "doanvantuyen/zalo-php-sdk",
     "description": "sdk for zalo developers",
     "keywords": ["zalosdk", "composer", "zalo", "sdk"],
-    "license": "Zalo Platform",
+    "license": "Zalo Platform Fork",
     "authors": [
         {
-            "name": "zaloplatform",
-            "email": "zaloplatform@gmail.com"
+            "name": "TuyenDV",
+            "email": "doanvantuyen@gmail.com"
         }
     ],
     "type": "project",
