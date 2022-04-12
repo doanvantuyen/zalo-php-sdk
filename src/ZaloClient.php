@@ -137,16 +137,16 @@ class ZaloClient {
         // Should throw `ZaloSDKException` exception on HTTP client error.
         // Don't catch to allow it to bubble up.
         $rawResponse = $this->httpClientHandler->send($url, $method, $body, $headers, $timeOut);
-        print_r($rawResponse);
+
         static::$requestCount++;
 
         $returnResponse = new ZaloResponse(
                 $request, $rawResponse->getBody(), $rawResponse->getHttpResponseCode(), $rawResponse->getHeaders()
         );
 
-        if ($returnResponse->isError()) {
-            throw $returnResponse->getThrownException();
-        }
+//        if ($returnResponse->isError()) {
+//            throw $returnResponse->getThrownException();
+//        }
 
         return $returnResponse;
     }
